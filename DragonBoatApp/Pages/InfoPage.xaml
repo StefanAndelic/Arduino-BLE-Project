@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DragonBoatApp.Pages.InfoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Margin="10"
+                BackgroundColor="Green"
+                Command="{Binding Scan}"
+                CornerRadius="20"
+                Text="Scan"
+                TextColor="White" />
+
+
+            <ListView
+                    HasUnevenRows="True"
+                    ItemsSource="{Binding deviceList}"
+                    SelectedItem="{Binding SelectedEvent}">
+
+            </ListView>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

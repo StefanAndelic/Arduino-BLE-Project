@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{5AD7F66F-829B-41C3-A550-A8DE9C7A9EDB}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DragonBoatApp" expanded="True">
+            <Node name="DragonBoatApp" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="PageModels" expanded="True">
+                <Node name="ScanForDevicePageModel.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DragonBoatApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EFDBA007-1192-4377-9E36-A7B0AAA0459F" />
+  <MonoDevelop.Ide.ItemProperties.DragonBoatApp.Android PreferredExecutionTarget="Android.nexus_5x_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

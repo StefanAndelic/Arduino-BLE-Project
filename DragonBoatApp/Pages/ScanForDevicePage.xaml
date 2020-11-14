@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="DragonBoatApp.Pages.ScanForDevicePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Scan for available BT devices">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <ListView x:Name="Device" HasUnevenRows="True"/>
+
+
+
+
+            <Entry Placeholder="Username" PlaceholderColor="Olive" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
