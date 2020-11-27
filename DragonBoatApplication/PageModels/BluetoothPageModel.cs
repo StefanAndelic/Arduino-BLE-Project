@@ -64,11 +64,9 @@ namespace DragonBoatApplication.PageModels
             }
         }
 
-        //string UUID2 = "00001101-0000-1000-8000-00805f9b34fb";
+        string UUID2 = "00001101-0000-1000-8000-00805f9b34fb"; // characteristics
 
-        //string UUID1 = "00000000-0000-1000-8000-00805f9b34fb";
-
-        string UUID = "00000000-0000-0000-0000-000000000000";
+        string UUID1 = "00000000-0000-1000-8000-00805f9b34fb"; // services 
 
 
         public Command Disconnect { get; set; }
@@ -133,8 +131,8 @@ namespace DragonBoatApplication.PageModels
 
                     while (disconnect == false)
                     {
-                        var service = await dv.GetServiceAsync(Guid.Parse(UUID));
-                        var characteristic = await service.GetCharacteristicAsync(Guid.Parse(UUID));
+                        var service = await dv.GetServiceAsync(Guid.Parse(UUID1));
+                        var characteristic = await service.GetCharacteristicAsync(Guid.Parse(UUID2));
 
                         characteristic.ValueUpdated += (o, args) =>
                         {

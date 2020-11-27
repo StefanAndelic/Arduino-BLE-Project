@@ -8,7 +8,7 @@
 
             <Button
 
-            Text="Connect to HC-06 device"
+            Text="Connect to ESP32 test device"
             BackgroundColor="Green"
             TextColor="White"
             CornerRadius="20"
