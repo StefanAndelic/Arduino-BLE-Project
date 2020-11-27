@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DragonBoatApplication.Pages.BluetoothPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Button Text="Disconnect" Command="{Binding Disconnect}"/>
+
+            <Label Text="{Binding DeviceName}" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+            <Label Text="{Binding Connecting, Mode=TwoWay}" FontSize="Medium" FontAttributes="Bold" TextColor="Red" HorizontalTextAlignment="Center"/>
+
+            <Label Text="{Binding Output}" HorizontalTextAlignment="Center"/>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
