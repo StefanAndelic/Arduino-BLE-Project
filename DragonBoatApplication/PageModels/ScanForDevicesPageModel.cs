@@ -88,6 +88,7 @@ namespace DragonBoatApplication.PageModels
             {
 
                 ScanForDevices();
+
                 if (deviceFound == null)
                 {
                     deviceFound = d;

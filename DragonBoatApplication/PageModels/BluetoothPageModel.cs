@@ -73,7 +73,7 @@ namespace DragonBoatApplication.PageModels
 
         public Command Scan { get; set; }
 
-        bool disconnect = true;
+        bool disconnect;
 
         public ObservableCollection<IDevice> deviceList;
 
@@ -87,18 +87,21 @@ namespace DragonBoatApplication.PageModels
             ble = CrossBluetoothLE.Current;
             adapter = CrossBluetoothLE.Current.Adapter;
 
-            Connecting = "Connecting to the device ...";
+            disconnect = false;
 
 
             ConnectToDevice();
+
+
 
 
         }
 
 
         private async void DisconnectDevice()
-
         {
+
+
             try
             {
                 await adapter.DisconnectDeviceAsync(dv);
@@ -119,13 +122,21 @@ namespace DragonBoatApplication.PageModels
         private async void ConnectToDevice()
         {
 
-
+            Connecting = "Connecting to the device ...";
 
             try
             {
 
 
-                if (dv != null)
+                if (dv == null) // if device is not found
+                {
+                    Connecting = "Arduino cannot be discovered by the phone, press disconnect button and check Arduino's BT before connecting again";
+
+
+                }
+
+
+                else
                 {
                     await adapter.ConnectToDeviceAsync(dv);
 
@@ -154,16 +165,10 @@ namespace DragonBoatApplication.PageModels
 
                     }
 
+
+
+
                 }
-                else
-                {
-
-                    Connecting = "Arduino cannot be discovered by the phone, press disconnect button and check Arduino's BT before connecting again";
-                }
-
-
-
-
             }
             catch (DeviceConnectionException ex)
             {
